@@ -1,21 +1,18 @@
 import './App.css'
 import { ToastContainer, toast } from 'react-toastify';
 import { FaBeer, FaUser } from 'react-icons/fa';
+import NavBar from './components/NavBar/NavBar';
+import Hero from './components/Hero/Hero';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
-  const notify = () => {
-    toast("test notify")
-  }
-
    return (
      <>
-       <div>
-         <button onClick={notify} className='btn btn-primary text-2xl font-bold'>
-           AI Model Hub <FaUser />
-         </button>
-       </div>
-
+       <NavBar></NavBar>
+       <Hero></Hero>
+       {/* Footer */}
+       <Footer/>
        {/* Toast Container */}
        <ToastContainer />
      </>
