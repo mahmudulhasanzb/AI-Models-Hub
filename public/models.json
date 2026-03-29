@@ -86,5 +86,63 @@
     "price": 20,
     "image": "https://learningtech.uncg.edu/wp-content/uploads/2025/10/app-page-logo_copilot.png",
     "status": "popular"
+  },
+  {
+    "id": 12,
+    "title": "Pi",
+    "description": "Personal AI by Inflection AI.\nFocused on conversations, emotional intelligence, and support.",
+    "price": 0,
+    "image": "https://play-lh.googleusercontent.com/Ef7is-Xonqhs2agdsGarpTS_c1Is6Yvk-JhnL3qNvU1Nwdc7kn6Dml2IuCqlfa9Nuzk=w480-h960-rw",
+    "status": "favourite"
+  },
+  {
+    "id": 13,
+    "title": "Replika",
+    "description": "AI companion designed for emotional connection.\nGreat for chatting, journaling, and mental wellness.",
+    "price": 10,
+    "image": "https://b.thumbs.redditmedia.com/fDDTkdwiZqxvOcvENxP-hZvOHCdY-BMH4B962TiS7kU.png",
+    "status": "popular"
+  },
+  {
+    "id": 14,
+    "title": "HuggingChat",
+    "description": "Open-source chat interface by Hugging Face.\nSupports multiple models and community-driven AI.",
+    "price": 0,
+    "image": "https://huggingface.co/front/assets/huggingface_logo.svg",
+    "status": "favourite"
+  },
+  {
+    "id": 15,
+    "title": "Jasper AI",
+    "description": "AI writing assistant for marketing and content.\nGreat for blogs, ads, and business copy.",
+    "price": 39,
+    "image": "https://cdn.prod.website-files.com/6768172cdd575365a0f21e52/69c04448c33d4229eedc1da7_jasper.jpeg",
+    "status": "favourite"
+  },
+  {
+    "id": 16,
+    "title": "Writesonic",
+    "description": "AI content generator for blogs and marketing.\nIncludes chatbot and SEO tools.",
+    "price": 20,
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/writesonic-icon.png",
+    "status": "popular"
+  },
+  {
+    "id": 17,
+    "title": "Notion AI",
+    "description": "AI built into Notion workspace.\nHelps with writing, summarizing, and productivity.",
+    "price": 10,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
+    "status": "favourite"
+  },
+  {
+    "id": 18,
+    "title": "Runway ML",
+    "description": "AI for video editing and generation.\nPopular for creators working with GenAI video.",
+    "price": 15,
+    "image": "https://www.toolpilot.ai/cdn/shop/files/9f1ac9dd0e9c263637603aa846568d3b_1220x_crop_center.png?v=1690983027",
+    "status": "mostwanted"
   }
+
+  
 ]

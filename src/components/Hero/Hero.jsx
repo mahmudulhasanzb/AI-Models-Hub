@@ -1,9 +1,9 @@
-import React from 'react'; 
-import HeroImg from "../../assets/banner.png"
+import React from 'react';
+import HeroImg from '../../assets/banner.png';
 
 const Hero = () => {
   return (
-    <div className="relative min-w-full flex justify-center items-center overflow-hidden mt-10 py-10 px-4">
+    <div id="home" className="relative min-w-full flex justify-center items-center overflow-hidden py-10 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10 w-full">
         {/* Left Content */}
         <div className="space-y-6">
@@ -27,14 +27,22 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 pt-4">
             <button className="bg-linear-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 transition-all px-8 py-4 rounded-full font-semibold text-lg shadow-[0_0_25px_rgba(34,211,238,0.4)] hover:shadow-[0_0_35px_rgba(168,85,247,0.6)] flex items-center gap-3 group text-white border border-white/10">
               Get Unlimited Access
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
+              <span className="group-hover:translate-x-1 transition-transform">
+                →
+              </span>
             </button>
           </div>
 
           <div className="flex items-center gap-8 text-sm text-zinc-500 pt-6">
-            <div className="flex items-center gap-1"><span className="text-cyan-400">✓</span> 50+ Frontier Models</div>
-            <div className="flex items-center gap-1"><span className="text-cyan-400">✓</span> No Usage Limits</div>
-            <div className="flex items-center gap-1"><span className="text-cyan-400">✓</span> Cancel Anytime</div>
+            <div className="flex items-center gap-1">
+              <span className="text-cyan-400">✓</span> 50+ Frontier Models
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="text-cyan-400">✓</span> No Usage Limits
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="text-cyan-400">✓</span> Cancel Anytime
+            </div>
           </div>
         </div>
 

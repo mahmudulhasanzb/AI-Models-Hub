@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import { toast } from 'react-toastify';
 
 const Cart = ({ carts, setCarts }) => {
@@ -6,24 +6,29 @@ const Cart = ({ carts, setCarts }) => {
   // Place order
   const handlePayment = () => {
     setCarts([]);
-    toast.success("Payment successful!");
+    toast.success('Payment successful!');
   };
 
   // delete selected cart
-  const handleDelete = (cart) => {
-    const filteredArray = carts.filter(c => c.id !== cart.id)
-    setCarts(filteredArray)
-    toast.warning("Item removed from cart!")
+  const handleDelete = cart => {
+    const filteredArray = carts.filter(c => c.id !== cart.id);
+    setCarts(filteredArray);
+    toast.warning('Item removed from cart!');
   };
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold text-white mb-8 text-center drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
-        Your <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-purple-500">Cart</span>
+        Your{' '}
+        <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-purple-500">
+          Cart
+        </span>
       </h1>
 
       {carts.length === 0 ? (
-        <div className="text-center text-zinc-500 py-10 text-xl">Your cart is empty.</div>
+        <div className="text-center text-zinc-500 py-10 text-xl">
+          Your cart is empty.
+        </div>
       ) : (
         <div className="space-y-4">
           {carts.map(cart => (
@@ -31,18 +36,30 @@ const Cart = ({ carts, setCarts }) => {
               <div className="bg-zinc-900/50 backdrop-blur-md rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.3)] border border-white/5 p-6 flex items-center w-full max-w-4xl hover:border-cyan-500/30 transition-colors duration-300 group">
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 rounded-xl bg-zinc-800/80 flex items-center justify-center border border-white/5 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-shadow">
-                    <img src={cart.image} alt={cart.title} className="w-16 h-16 object-contain drop-shadow-md" />
+                    <img
+                      src={cart.image}
+                      alt={cart.title}
+                      className="w-16 h-16 object-contain drop-shadow-md"
+                    />
                   </div>
                 </div>
 
                 <div className="ml-6 flex-grow">
-                  <h2 className="text-2xl font-bold text-white tracking-wide">{cart.title}</h2>
-                  <p className="text-sm text-zinc-400 mt-1 max-w-xl">{cart.description}</p>
+                  <h2 className="text-2xl font-bold text-white tracking-wide">
+                    {cart.title}
+                  </h2>
+                  <p className="text-sm text-zinc-400 mt-1 max-w-xl">
+                    {cart.description}
+                  </p>
                 </div>
 
                 <div className="ml-6 flex flex-col items-end">
-                  <p className="text-2xl font-bold text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.4)]">${cart.price}</p>
-                  <p className="text-sm text-zinc-500 font-medium">/per month</p>
+                  <p className="text-2xl font-bold text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.4)]">
+                    ${cart.price}
+                  </p>
+                  <p className="text-sm text-zinc-500 font-medium">
+                    /per month
+                  </p>
                 </div>
 
                 <button
@@ -71,7 +88,9 @@ const Cart = ({ carts, setCarts }) => {
 
           <div className="flex justify-between items-center bg-linear-to-r from-cyan-900/30 to-purple-900/30 backdrop-blur-md border border-cyan-500/20 text-white p-6 mt-8 rounded-2xl text-2xl max-w-4xl mx-auto shadow-[0_0_20px_rgba(34,211,238,0.1)]">
             <div className="font-semibold text-zinc-300">Total Calculation</div>
-            <div className="font-bold text-3xl text-cyan-300 drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">${totalPrice}</div>
+            <div className="font-bold text-3xl text-cyan-300 drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">
+              ${totalPrice}
+            </div>
           </div>
 
           <div className="max-w-4xl mx-auto mt-6">
