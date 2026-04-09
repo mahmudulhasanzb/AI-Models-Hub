@@ -20,6 +20,9 @@ AI Models Hub is a responsive React application that showcases a curated collect
 -   **Notifications:** `react-toastify`
 -   **Icons:** `react-icons`
 
+## 🔗Live Link: 
+https://ai-models-hub.vercel.app
+
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
@@ -74,3 +77,5 @@ Here is an overview of the project's directory structure:
 │   └── index.css           # Global styles and Tailwind CSS configuration
 ├── package.json            # Project dependencies and scripts
 └── vite.config.js          # Vite configuration file
+
+
