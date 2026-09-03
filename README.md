@@ -21,7 +21,7 @@ AI Models Hub is a responsive React application that showcases a curated collect
 -   **Icons:** `react-icons`
 
 ## 🔗Live Link: 
-https://ai-models-hub.vercel.app
+[https://ai-modelss-hub.netlify.app/](https://ai-modelss-hub.netlify.app/)
 
 ## Getting Started
 
